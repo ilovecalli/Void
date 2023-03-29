@@ -28,6 +28,10 @@ searchBTN.addEventListener('click', async event => {
                     iframe.style.margin = '0';
                     iframe.src = urle;
                     win.document.body.appendChild(iframe)
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = "https://arc.io/widget.min.js#PrMzbhUg";
+                    win.document.body.appendChild(script);
                 }
             }
         }
